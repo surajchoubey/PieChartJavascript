@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <header>
+            <!-- navbar goes here -->
+        </header>
+
+        <div class="container">
+            <div class="row window align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4>Fill the form</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="Form" class="p-1">
+                                <div class="form-group row align-items-center">
+                                    <label for="name" class="col-12 col-lg-4"> Name </label>
+                                    <div class="col-12 col-lg-8 d-flex">
+                                        <div class="row">
+                                            <div class="col-6 col-lg-6">
+                                                <input required type="text" id="fname" name="name" placeholder="First Name" class="form-control">
+                                            </div>
+                                            <div class="col-6 col-sm-6">
+                                                <input required type="text" id="lname" name="name" placeholder="Last Name" class="form-control">
+                                            </div>
+                                        </div>                                      
+                                    </div>                                  
+                                </div>
+                                <div class="form-group row align-items-center">
+                                    <label for="city" class="col-12 col-lg-4"> City </label>
+                                    <div class="col-12 col-lg-8">
+                                        <input required type="text" id="city" name="city" placeholder="City" class="form-control">
+                                    </div>
+                                   
+                                </div>
+                                <div class="form-group row align-items-center">
+                                    <label for="gender" class="col-12 col-lg-4"> Gender </label>
+                                    <div class="col-12 col-lg-8">
+                                        <select id="gender" required name="gender" class="form-control">
+                                            <option value="" disabled>Choose Your Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row justify-content-center align-items center">
+                                    <button class="btn btn-success" type="submit" id="submit"> <b>Submit</b></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 card col-md-6">
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="" async defer></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="canvasjs.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
